@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <style>
-        .body{
-            background-color:aquamarine;
-        }
-        
         button{
             display:inline-block;
             margin:2rem 4rem;
@@ -23,41 +19,42 @@
             height:50px;
         }
         
-        #computerChoice{
+        #computerChoiceCSS{
             float: left;
             width:50%;
             text-align:center;
         }
         
-        #userChoice{
+        #userChoiceCSS{
             float:right;
             width:50%;
             text-align:center;
         }
     </style>
 </head>
-<body style="background-color: aquamarine;">
+<body style="background-color: aquamarine; font-family: Lucida Handwritting,Papyrus, Cursive; font-size:30px">
     <div  style="text-align: center;">
-    <h2> Hello there 👋👋</h2>    
-    <p style="font-size:20px;">Please selecte you're choice---</p>
+    <h2> Hello there 👋👋</h2>   
+    <h3><span id="userName"></span></h3> 
+    <p style="font-size:30px;">Please selecte you're choice---</p>
 
-    <button>Rock</button>
-    <button>Paper</button>
-    <button>Scissors</button>
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
 
     </div>
 
-    <div id="computerChoice">
-        <p style="font-size:20px;">Computer Choice :- </p>
+    <div id="computerChoiceCSS">
+        <p style="font-size:30px;">Computer Choice :- <span id="computerChoice"></span> </p>
     </div>
 
-    <div id="userChoice">
-        <p style="font-size:20px;">You're Choice:-</p>
+    <div id="userChoiceCSS">
+        <p style="font-size:30px;">You're Choice:- <span id="userChoice"></span></p>
     </div>
 
-    <div style="text-align:center;  padding-top: 8rem " id="result">
-        <h2>Result</h2>
+    <div style="text-align:center;  padding-top: 8rem " id="ResultCSS">
+        <h2>Result :- <span  id="result"></span></h2>
     </div>
-    <script src="app.js" charset="utf-8" type="text/javascript"></script>
+    <script src="app.js" charset="utf-8"></script>
 </body>
 </html>
