@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <style>
+        .body{
+            background-color:aquamarine;
+        }
+        
+        button{
+            display:inline-block;
+            margin:2rem 4rem;
+            cursor: pointer;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            color: #ffc107;
+            border-radius: 12px;
+            width:150px;
+            height:50px;
+        }
+        
+        #computerChoice{
+            float: left;
+            width:50%;
+            text-align:center;
+        }
+        
+        #userChoice{
+            float:right;
+            width:50%;
+            text-align:center;
+        }
+    </style>
+</head>
+<body style="background-color: aquamarine;">
+    <div  style="text-align: center;">
+    <h2> Hello there 👋👋</h2>    
+    <p style="font-size:20px;">Please selecte you're choice---</p>
+
+    <button>Rock</button>
+    <button>Paper</button>
+    <button>Scissors</button>
+
+    </div>
+
+    <div id="computerChoice">
+        <p style="font-size:20px;">Computer Choice :- </p>
+    </div>
+
+    <div id="userChoice">
+        <p style="font-size:20px;">You're Choice:-</p>
+    </div>
+
+    <div style="text-align:center;  padding-top: 8rem " id="result">
+        <h2>Result</h2>
+    </div>
+    <script src="app.js" charset="utf-8" type="text/javascript"></script>
+</body>
+</html>
